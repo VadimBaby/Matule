@@ -23,16 +23,41 @@ struct MatuleApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if watchedQueueItemId != Constants.queue.last!.id {
-                OnboardingView(watchedQueueItemId: watchedQueueItemId)
-            } else {
-                NavigationStack {
-                   // SignInView()
-                    HomeView()
-                }
-                .navigationTransition(.fade(.cross))
-                .environmentObject(homeViewModel)
+            
+            Test()
+//            if watchedQueueItemId != Constants.queue.last!.id {
+//                OnboardingView(watchedQueueItemId: watchedQueueItemId)
+//            } else {
+//                NavigationStack {
+//                   // SignInView()
+//                    HomeView()
+//                }
+//                .navigationTransition(.fade(.cross))
+//                .environmentObject(homeViewModel)
+//            }
+        }
+    }
+}
+
+struct Test: View {
+    
+    @State var image: UIImage? = nil
+    @State var show: Bool = false
+    
+    var body: some View {
+        VStack {
+            if let image {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+            }
+            
+            Button("Show") {
+                show.toggle()
             }
         }
+        .sheet(isPresented: $show, content: {
+            ImagePickerView(image: $image, showScreen: $show)
+        })
     }
 }

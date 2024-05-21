@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C25EC1E2BFC490B0047C573 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C25EC1D2BFC490B0047C573 /* ImagePickerView.swift */; };
 		2C69BEEF2BF8A5C2003B5392 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C69BEEE2BF8A5C2003B5392 /* LocationManager.swift */; };
 		2CADA7882BF0C58C003270EE /* RealHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADA7872BF0C58C003270EE /* RealHomeView.swift */; };
 		2CADA78A2BF1D008003270EE /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADA7892BF1D008003270EE /* ProductCard.swift */; };
@@ -61,6 +62,10 @@
 		2CB3791D2BEF385400C7A50C /* GeneratePasswordSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3791C2BEF385400C7A50C /* GeneratePasswordSheet.swift */; };
 		2CB379212BEF45FC00C7A50C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB379202BEF45FC00C7A50C /* HomeView.swift */; };
 		2CBE4D8E2BFA596200E9CB87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CBE4D902BFA596200E9CB87 /* Localizable.strings */; };
+		2CD571BB2BFC7536002C338C /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD571BA2BFC7536002C338C /* KeychainSwift */; };
+		2CD571BE2BFC754C002C338C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD571BD2BFC754C002C338C /* SDWebImageSwiftUI */; };
+		2CD571C12BFC75B9002C338C /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD571C02BFC75B9002C338C /* SwiftfulUI */; };
+		2CD571C82BFCCA86002C338C /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD571C72BFCCA86002C338C /* SliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C25EC1D2BFC490B0047C573 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		2C69BEEE2BF8A5C2003B5392 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2CADA7872BF0C58C003270EE /* RealHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealHomeView.swift; sourceTree = "<group>"; };
 		2CADA7892BF1D008003270EE /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 		2CB379202BEF45FC00C7A50C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2CBE4D8F2BFA596200E9CB87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2CBE4D912BFA597C00E9CB87 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2CD571C72BFCCA86002C338C /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +143,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD571C12BFC75B9002C338C /* SwiftfulUI in Frameworks */,
+				2CD571BE2BFC754C002C338C /* SDWebImageSwiftUI in Frameworks */,
 				2CB379082BEE415E00C7A50C /* Storage in Frameworks */,
 				2CB378C42BECAE1300C7A50C /* NavigationTransitions in Frameworks */,
+				2CD571BB2BFC7536002C338C /* KeychainSwift in Frameworks */,
 				2CB3790D2BEE492800C7A50C /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +244,7 @@
 				2CB378B42BEC9DA100C7A50C /* Info.plist */,
 				2CB378952BEC9C7900C7A50C /* MatuleApp.swift */,
 				2CADA7962BF1E21D003270EE /* DataModel.xcdatamodeld */,
+				2CD571C72BFCCA86002C338C /* SliderView.swift */,
 				2CB379122BEF228C00C7A50C /* document.pdf */,
 				2CBE4D902BFA596200E9CB87 /* Localizable.strings */,
 				2CB379092BEE48F800C7A50C /* Utils */,
@@ -404,6 +415,7 @@
 				2CB379142BEF22A300C7A50C /* PDFDocumentView.swift */,
 				2CB379162BEF242800C7A50C /* RadioButton.swift */,
 				2CADA7892BF1D008003270EE /* ProductCard.swift */,
+				2C25EC1D2BFC490B0047C573 /* ImagePickerView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -529,6 +541,9 @@
 				2CB378C32BECAE1300C7A50C /* NavigationTransitions */,
 				2CB379072BEE415E00C7A50C /* Storage */,
 				2CB3790C2BEE492800C7A50C /* Supabase */,
+				2CD571BA2BFC7536002C338C /* KeychainSwift */,
+				2CD571BD2BFC754C002C338C /* SDWebImageSwiftUI */,
+				2CD571C02BFC75B9002C338C /* SwiftfulUI */,
 			);
 			productName = Matule;
 			productReference = 2CB378922BEC9C7900C7A50C /* Matule.app */;
@@ -587,6 +602,9 @@
 			packageReferences = (
 				2CB378C22BECAE1300C7A50C /* XCRemoteSwiftPackageReference "swiftui-navigation-transitions" */,
 				2CB379032BEE414900C7A50C /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				2CD571B92BFC7536002C338C /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				2CD571BC2BFC754C002C338C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				2CD571BF2BFC75B9002C338C /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
 			);
 			productRefGroup = 2CB378932BEC9C7900C7A50C /* Products */;
 			projectDirPath = "";
@@ -639,6 +657,7 @@
 				2CADA7A22BF32B93003270EE /* UIImage.swift in Sources */,
 				2CADA78A2BF1D008003270EE /* ProductCard.swift in Sources */,
 				2CB3791B2BEF2B9900C7A50C /* OTPVierificationView.swift in Sources */,
+				2CD571C82BFCCA86002C338C /* SliderView.swift in Sources */,
 				2CB3791D2BEF385400C7A50C /* GeneratePasswordSheet.swift in Sources */,
 				2CADA7882BF0C58C003270EE /* RealHomeView.swift in Sources */,
 				2CB3790B2BEE490300C7A50C /* SupabaseManager.swift in Sources */,
@@ -652,6 +671,7 @@
 				2CADA7A62BF46EA8003270EE /* NetworkManager.swift in Sources */,
 				2CADA7A02BF31BF8003270EE /* FavoriteView.swift in Sources */,
 				2CB378CA2BECD16D00C7A50C /* WhiteButtonStyle.swift in Sources */,
+				2C25EC1E2BFC490B0047C573 /* ImagePickerView.swift in Sources */,
 				2CADA7922BF1DADE003270EE /* ProductModel.swift in Sources */,
 				2CB378F82BEDFFC400C7A50C /* SignInView.swift in Sources */,
 				2CB379152BEF22A300C7A50C /* PDFDocumentView.swift in Sources */,
@@ -833,6 +853,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Matule/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "press accept";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "press ok";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "press ok";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "press ok";
@@ -876,6 +897,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Matule/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "press accept";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "press ok";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "press ok";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "press ok";
@@ -995,6 +1017,30 @@
 				minimumVersion = 2.5.1;
 			};
 		};
+		2CD571B92BFC7536002C338C /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+		2CD571BC2BFC754C002C338C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
+		2CD571BF2BFC75B9002C338C /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1017,6 +1063,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2CB379032BEE414900C7A50C /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Supabase;
+		};
+		2CD571BA2BFC7536002C338C /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD571B92BFC7536002C338C /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		2CD571BD2BFC754C002C338C /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD571BC2BFC754C002C338C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		2CD571C02BFC75B9002C338C /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD571BF2BFC75B9002C338C /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 

@@ -32,13 +32,13 @@ struct OnboardingView: View {
                         switch value {
                         case .first:
                             WelconeOnboardingView()
-                                .transition(.opacity)
+                                .transition(.slide)
                         case .second:
                             OnboardingTitleView(id: 2, image: currentQueueItem.image.rawValue, title: currentQueueItem.title, subtitle: currentQueueItem.subtitle)
-                                .transition(.opacity)
+                                .transition(.slide)
                         case .third:
                             OnboardingTitleView(id: 3, image: currentQueueItem.image.rawValue, title: currentQueueItem.title, subtitle: currentQueueItem.subtitle)
-                                .transition(.opacity)
+                                .transition(.slide)
                         }
                     }
                     
